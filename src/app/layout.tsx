@@ -1,4 +1,37 @@
-import './globals.css'
+import '../styles/globals.css';
+import Footer from '../components/Footer';
+import Header from '@/components/Header';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Carter Brooks | Software Developer Portfolio',
+  description: 'Explore Carter Brooks\'s software developer portfolio, showcasing expertise in full-stack web development.',
+  keywords: '',
+  alternates: {
+    canonical: 'https://carterbrooks.dev',
+
+  },
+  creator: 'Carter Brooks',
+  icons: {
+    icon: 'fire-favicon.ico'
+  },
+  openGraph: {
+    title: 'Carter Brooks | Developer Portfolio',
+    url: 'https://carterbrooks.dev',
+    images: [
+      {
+        url: 'https://nextjs.org/og.png',
+        width: 800,
+        height: 600,
+      },
+    ],
+    locale: 'en-US',
+    type: 'website'
+  },
+  robots: {
+    index: true,
+  }
+}
 
 export default function RootLayout({
   children,
@@ -7,12 +40,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
-      <head />
-      <body>{children}</body>
+      <body className='h-screen w-screen'>
+        <Header />
+        <div className='h-screen w-screen flex mt-48 justify-center'>{children}</div>
+        <Footer />
+      </body>
     </html>
   )
 }

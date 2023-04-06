@@ -1,3 +1,3 @@
-export default function ProjectPage() {
-  return <div>Non Deployed Product Page</div>
+export default function Post() {
+  return <div>post</div>
 }
