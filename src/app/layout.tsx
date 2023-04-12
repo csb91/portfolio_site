@@ -40,9 +40,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='h-screen w-screen'>
+      <body className='h-screen w-screen dark:bg-zinc-800'>
         <Header />
-        <div className='w-screen h-screen flex mt-48 justify-center'>{children}</div>
+        <div className='flex flex-grow min-h-screen justify-center mt-48'>{children}</div>
         <Footer />
       </body>
     </html>

@@ -6,13 +6,13 @@ import '../styles/globals.css';
 export default async function Home() {
 
   return (
-    <div>
-      <div className='purple-orange bg-clip-text text-transparent'>
+    <div className='justify-center'>
+      <div className='container flex flex-col purple-orange bg-clip-text text-transparent'>
         <div><h1 className='text-6xl'>Hi, my name is Carter Brooks!</h1></div>
-        <div>
+        <div className='flex justify-center'>
           <Link href='/projects'>Checkout My Projects</Link>
         </div>
-        <div>
+        <div className='flex justify-center'>
           <Link href='/contact'>Contact Me</Link>
         </div>
         <div className='flex justify-center'>
@@ -20,6 +20,7 @@ export default async function Home() {
           src={profilePic}
           alt='Carter Brooks Profile Picture'
           priority
+          className='w-60 h-60'
           />
         </div>
       </div>

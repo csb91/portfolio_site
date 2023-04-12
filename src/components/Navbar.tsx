@@ -14,18 +14,20 @@ const links: linkInfo[] = [
 
 const Navbar = () => {
   return (
-    <nav className='container purple-orange bg-clip-text text-transparent text-lg h-10 mx-auto px-4 flex items-center justify-between max-w-6xl'>
-      <div className=''>
+    <nav className='container purple-orange bg-clip-text text-transparent h-10 mx-auto px-4 flex items-center justify-between max-w-6xl'>
+      <div className='text-xl'>
         <Link href='/'>
           CB Logo
         </Link>
       </div>
       <div className='hidden sm:flex'>
-        <ul className='flex w-96 justify-evenly '>
-          {links.map((link , index) => (
-            <NavbarLinks key={index} link={link} />
-          ))}
-        </ul>
+        <nav>
+          <ul className='flex w-96 justify-evenly '>
+            {links.map((link , index) => (
+              <NavbarLinks key={index} link={link} />
+            ))}
+          </ul>
+        </nav>
       </div>
       <div className='outline 1px sm:hidden'>
         <svg width="24" height="24" viewBox="0 0 24 24">
