@@ -14,7 +14,7 @@ const links: linkInfo[] = [
 
 const Navbar = () => {
   return (
-    <nav className='container purple-orange bg-clip-text text-transparent h-10 mx-auto px-4 flex items-center justify-between max-w-6xl'>
+    <div className='container purple-orange bg-clip-text text-transparent h-10 mx-auto px-4 flex items-center justify-between max-w-6xl'>
       <div className='text-xl'>
         <Link href='/'>
           CB Logo
@@ -42,7 +42,7 @@ const Navbar = () => {
           <Menu className='text-white text-24' />
         </svg>
       </div>
-    </nav>
+    </div>
   )
 }
 

@@ -1,31 +1,22 @@
-'use client'
-import { useState } from "react";
+import ContactForm from "@/components/ContactForm";
 
 export default function Contact() {
-  const [email, setEmail] = useState('')
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    await fetch('/api/contact', {
-      method: 'POST',
-      body: JSON.stringify({email}),
-      headers: {
-        'Content-Type': 'application/json',
-        'Accept':  'application/json'
-      }
-    })
-    console.log('hi')
-  }
 
   return (
-    <div>
-      <h1>
-        Get In Touch
+    <div className='container mx-auto justify-center max-w-6xl px-4'>
+      <h1 className='text-4xl text-center'>
+        Get In Touch!
       </h1>
-      <form onSubmit={handleSubmit}>
-        <input type='email' required value={email} onChange={(e) => setEmail(e.target.value)}></input>
-        <button type='submit'>submit</button>
-      </form>
+      <p className='text-center mt-2 px-4 md:px-80'>
+        I'm currently looking for new opportunities. Please feel free to reach out via the contact form or using one of the other methods listed.
+      </p>
+      <div className='container flex flex-col border-2 md:flex-row px-4 mt-10 justify-evenly'>
+        <div className='mb-4 md:mb-0 md:mr-10 border-2 w-96'>
+          <div>phone</div>
+          <div>email</div>
+        </div>
+        <ContactForm />
+      </div>
     </div>
   )
 }

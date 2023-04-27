@@ -6,6 +6,13 @@
   box-sizing: border-box;
 }
 
+body, html {
+  margin: 0px;
+  padding: 0px;
+  overflow: auto;
+
+}
+
 .rainbow-mesh {
   background-color: hsla(0, 100%, 50%, 1);
   background-image: radial-gradient(
@@ -32,17 +39,15 @@
     radial-gradient(at 35% 44%, hsla(337, 92%, 61%, 1) 0px, transparent 50%);
 }
 
+.glass {
+  backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba();
+}
+
 .header-mesh-test {
   background: #ee0979;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-}
-
-body, html {
-  margin: 0px;
-  padding: 0px;
-  overflow: auto;
 
 }
 
