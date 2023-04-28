@@ -14,7 +14,7 @@ const links: linkInfo[] = [
 
 const Navbar = () => {
   return (
-    <div className='container purple-orange bg-clip-text text-transparent h-10 mx-auto px-4 flex items-center justify-between max-w-6xl'>
+    <div className='container purple-orange bg-clip-text text-transparent h-10 mx-auto pl-4 flex items-center justify-between max-w-6xl'>
       <div className='text-xl'>
         <Link href='/'>
           CB Logo
@@ -22,7 +22,7 @@ const Navbar = () => {
       </div>
       <div className='hidden sm:flex'>
         <nav>
-          <ul className='flex w-96 justify-evenly '>
+          <ul className='flex w-96 justify-evenly'>
             {links.map((link , index) => (
               <NavbarLinks key={index} link={link} />
             ))}

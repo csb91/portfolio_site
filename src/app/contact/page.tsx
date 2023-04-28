@@ -7,11 +7,11 @@ export default function Contact() {
       <h1 className='text-4xl text-center'>
         Get In Touch!
       </h1>
-      <p className='text-center mt-2 px-4 md:px-80'>
+      <p className='text-center mt-2 px-4 md:px-64'>
         I'm currently looking for new opportunities. Please feel free to reach out via the contact form or using one of the other methods listed.
       </p>
-      <div className='container flex flex-col border-2 md:flex-row px-4 mt-10 justify-evenly'>
-        <div className='mb-4 md:mb-0 md:mr-10 border-2 w-96'>
+      <div className='container flex flex-col border-2 md:flex-row mt-6 p-4 justify-evenly'>
+        <div className='mb-4 md:mb-0 md:mr-10 border-2 md:w-96'>
           <div>phone</div>
           <div>email</div>
         </div>

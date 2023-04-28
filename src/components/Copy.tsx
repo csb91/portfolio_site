@@ -12,7 +12,7 @@ export default function Contact() {
       body: JSON.stringify({email}),
       headers: {
         'Content-Type': 'application/json',
-        'Accept':  'application/json'
+        Accept:  'application/json'
       }
     })
     console.log('hi')

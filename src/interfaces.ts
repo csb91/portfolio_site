@@ -6,3 +6,10 @@ export interface linkInfo {
 export interface NavbarLinksProps {
   link: linkInfo;
 }
+
+export interface formData {
+  name: string;
+  email: string;
+  subject: string;
+  message: string
+}

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import profilePic from '../../public/profile-pic.png'
-import '../styles/globals.css';
+
 
 export default async function Home() {
 
