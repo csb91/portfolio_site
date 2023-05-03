@@ -13,18 +13,20 @@ export default function Contact() {
       <p className='text-center mt-2 px-4 md:px-64'>
         I&apos;m currently looking for new opportunities. Please feel free to reach out via the contact form or using one of the other methods listed.
       </p>
-      <div className='container flex flex-col-reverse mx-auto border-2 rounded-md md:flex-row mt-6 p-4 justify-evenly rainbow-mesh max-w-5xl'>
-        <div className='container flex flex-col mb-4 md:mb-0 md:mr-10 border-2 rounded-md md:w-96 justify-center'>
-          <div className='flex flex-row mx-4'>
+      <div className='container flex flex-col-reverse justify-evenly mx-auto border-2 rounded-md md:flex-row mt-6 p-4 rainbow-mesh max-w-5xl'>
+        <div className='container flex flex-col justify-center mt-6 md:mt-0 md:mb-0 md:mr-10 border-2 rounded-md md:w-96 p-4'>
+          <div className='flex flex-row mx-4 mb-6'>
             <Phone className='mr-4'/>
             <p>+1 (469) 443-6939</p>
           </div>
-          <div className='flex flex-row mx-4'>
-            <Mail className='mr-4'/>
-            <p>carter.brooks91@gmail.com</p>
+          <div className='flex flex-row mx-4 mb-10'>
+            <a href='mailto:carter.brooks91@gmail.com' className='flex flex-row'>
+              <Mail className='mr-4'/>
+              <p>carter.brooks91@gmail.com</p>
+            </a>
           </div>
           <div className='flex justify-end'>
-            <SocialLinks classNameContainer='' classNameLinks='hover:text-white'/>
+            <SocialLinks classNameContainer='justify-evenly mx-4' classNameLinks='hover:text-white'/>
           </div>
         </div>
         <ContactForm />

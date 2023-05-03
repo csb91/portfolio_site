@@ -11,7 +11,7 @@ const Footer = () => {
         <div>
           Carter Brooks | 2023
         </div>
-        <SocialLinks classNameContainer='w-36 mr-1' classNameLinks='hover:text-[#EE756A]'/>
+        <SocialLinks classNameContainer='justify-evenly w-36 mr-1' classNameLinks='hover:text-[#EE756A]'/>
       </div>
     </footer>
   )

@@ -12,7 +12,7 @@ const socials: socialMedia[] = [
 const SocialLinks = ({ classNameContainer, classNameLinks }) => {
 
   return (
-    <div className={clsx('container flex flex-row justify-evenly', classNameContainer)}>
+    <div className={clsx('container flex flex-row', classNameContainer)}>
       {socials.map((social, index) =>
         <Link
           href={social.url}
