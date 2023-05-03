@@ -1,4 +1,4 @@
-import { formData } from "@/interfaces";
+import { formData } from "@/interfaces/interfaces";
 
 export const fetcher = async ({ url, method, body, json = true }) => {
   const res = await fetch(url, {

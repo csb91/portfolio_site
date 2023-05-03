@@ -1,7 +1,6 @@
-import { FC } from "react";
 import Link from "next/link";
 import { Menu } from "react-feather";
-import { linkInfo } from "@/interfaces";
+import { linkInfo } from "@/interfaces/interfaces";
 import NavbarLinks from "./NavbarLinks";
 
 
@@ -29,7 +28,7 @@ const Navbar = () => {
           </ul>
         </nav>
       </div>
-      <div className='outline 1px sm:hidden'>
+      <div className='outline 1px sm:hidden mr-4'>
         <svg width="24" height="24" viewBox="0 0 24 24">
           <defs>
             <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">

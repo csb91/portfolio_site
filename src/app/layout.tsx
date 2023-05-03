@@ -42,7 +42,7 @@ export default function RootLayout({
     <html lang="en">
       <body className='h-screen w-screen dark:bg-zinc-800'>
         <Header />
-        <div className='flex flex-grow min-h-screen justify-center mt-36'>{children}</div>
+        <div className='container flex mx-auto min-h-screen justify-center mt-36'>{children}</div>
         <Footer />
       </body>
     </html>

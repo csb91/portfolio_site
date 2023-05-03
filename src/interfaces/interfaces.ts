@@ -13,3 +13,8 @@ export interface formData {
   subject: string;
   message: string
 }
+
+export interface socialMedia {
+  platform: string;
+  url: string;
+}

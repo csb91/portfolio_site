@@ -3,8 +3,8 @@
 import { produce } from "immer";
 import { contact } from "@/lib/api";
 import Input from "./Input";
-import { useState, useCallback, ChangeEvent } from "react";
-import { formData } from "@/interfaces";
+import { useState, ChangeEvent } from "react";
+import { formData } from "@/interfaces/interfaces";
 
 const initial: formData = {
   name: '',
@@ -35,7 +35,7 @@ const ContactForm = () => {
 
   return (
     <>
-      <form onSubmit={handleSubmit} className='flex flex-col border-2 md:w-1/2 p-1'>
+      <form onSubmit={handleSubmit} className='flex flex-col border-2 rounded-md md:w-1/2 p-2'>
         <label htmlFor='name'>Name</label>
         <Input
           required
@@ -70,13 +70,15 @@ const ContactForm = () => {
         <textarea
           required
           id='message'
-          className='border-solid border-gray border-2 px-6 py-2 text-lg rounded-md shadow-md'
+          className='border-solid border-gray border-2 px-6 py-2 text-md rounded-md shadow-md'
           placeholder='Message'
           rows={4}
           value = {formState.message}
           onChange={handleInputChange}
         />
-        <button type='submit' className='border-2 rounded-md mt-4 w-1/3'>Send</button>
+        <div className='flex justify-center align-self-end'>
+          <button type='submit' className='border-2 rounded-md mt-4 w-1/4 shadow-md bg-white'>Send</button>
+        </div>
       </form>
     </>
   )
