@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import profilePic from '../../public/profile-pic.png'
-import '../styles/globals.css';
+
 
 export default async function Home() {
 
@@ -19,7 +19,7 @@ export default async function Home() {
           <Image
           src={profilePic}
           alt='Carter Brooks Profile Picture'
-          priority
+          priority={true}
           className='w-60 h-60'
           />
         </div>

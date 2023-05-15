@@ -1,7 +1,6 @@
-import { FC } from "react";
 import Link from "next/link";
 import { Menu } from "react-feather";
-import { linkInfo } from "@/interfaces";
+import { linkInfo } from "@/interfaces/interfaces";
 import NavbarLinks from "./NavbarLinks";
 
 
@@ -14,7 +13,7 @@ const links: linkInfo[] = [
 
 const Navbar = () => {
   return (
-    <div className='container purple-orange bg-clip-text text-transparent h-10 mx-auto px-4 flex items-center justify-between max-w-6xl'>
+    <div className='container purple-orange bg-clip-text text-transparent h-10 mx-auto pl-4 flex items-center justify-between max-w-6xl'>
       <div className='text-xl'>
         <Link href='/'>
           CB Logo
@@ -22,14 +21,14 @@ const Navbar = () => {
       </div>
       <div className='hidden sm:flex'>
         <nav>
-          <ul className='flex w-96 justify-evenly '>
+          <ul className='flex w-96 justify-evenly'>
             {links.map((link , index) => (
               <NavbarLinks key={index} link={link} />
             ))}
           </ul>
         </nav>
       </div>
-      <div className='outline 1px sm:hidden'>
+      <div className='outline 1px sm:hidden mr-4'>
         <svg width="24" height="24" viewBox="0 0 24 24">
           <defs>
             <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
