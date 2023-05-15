@@ -14,11 +14,9 @@ const NavbarLinks: FC<NavbarLinksProps> = ({ link }) => {
   if (pathname === link.link) {
     isActive = true;
   }
-  console.log(pathname, link.link)
-  console.log(isActive)
 
   return (
-    <li className={clsx("hover:bg-transparent hover:shadow-lg hover:blur hover:text-purple-500", isActive && 'bg-transparent shadow-lg blur text-purple-500')}>
+    <li className={clsx("hover:text-purple-500", isActive && 'bg-transparent text-purple-500 underline')}>
       <Link href={link.link}>
         {link.label}
       </Link>

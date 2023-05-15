@@ -14,26 +14,27 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
       let info = await transporter.sendMail({
         from: process.env.EMAIL_USER,
-        to: 'carter.brooks91@gmail.com',
+        to: process.env.EMAIL_USER,
         subject: req.body.subject,
         text: `${req.body.message} Sent from: ${req.body.name} at ${req.body.email}`,
         html:
         `
-        <h1>Name: </h1>
-        <h3>${req.body.name}</h3>
-        <h1>Email: </h1>
-        <h3>${req.body.email}</h3>
-        <h1>Subject: </h1>
-        <h3>${req.body.subject}</h3>
-        <h1>Message: </h1>
-        <h3>${req.body.message}</h3>
+          <h1>Name: </h1>
+          <h3>${req.body.name}</h3>
+          <h1>Email: </h1>
+          <h3>${req.body.email}</h3>
+          <h1>Subject: </h1>
+          <h3>${req.body.subject}</h3>
+          <h1>Message: </h1>
+          <h3>${req.body.message}</h3>
         `
       });
 
-      res.json({data: 'ok'})
+      res.json({data: 'Success'})
     } catch (error) {
       res.status(400).json({message: error.message})
     }
+  } else {
+    res.status(400).json({message: 'Bad Request'})
   }
-  return res.status(400).json({message: 'Bad Request'})
 }
