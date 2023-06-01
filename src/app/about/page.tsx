@@ -10,7 +10,7 @@ export default function About() {
       <h2 className='text-2xl text-center mt-2'>
         I&apos;m a Full-Stack Software Engineer Focused on Building Modern Web Applications.
       </h2>
-      <div className='container flex flex-col-reverse md:flex-row justify-between mx-auto max-w-5xl mt-6 border'>
+      <div className='container flex flex-col-reverse md:flex-row justify-between mx-auto max-w-5xl mt-6'>
         <div className='md:w-1/2 px-10'>
             <p className='mb-4'>
             As a former petroleum engineer, I bring a unique perspective to the software engineering field.
@@ -26,7 +26,7 @@ export default function About() {
             </p>
             <p>
             When I&apos;m not coding, in my free time I enjoy traveling with my wife, Crystal, finding new music,
-            playing video games with my friends, running or spending time with my family.
+            playing video games with my friends, running or spending time with family.
             </p>
         </div>
         <div className='flex items-center p-2'>
@@ -41,7 +41,7 @@ export default function About() {
         </div>
       </div>
       <div className='mt-10'>
-        Technologies/Skills?
+        Technologies/Skills - Maybe put on front page?
       </div>
       <div className='mt-10'>
         Spotify Recent Played?
