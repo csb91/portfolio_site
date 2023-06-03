@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import aboutMePic from '../../../public/IMG_5335.jpg'
+import RecentlyPlayed from '@/components/RecentlyPlayed';
 
 export default function About() {
   return (
@@ -10,8 +11,8 @@ export default function About() {
       <h2 className='text-2xl text-center mt-2'>
         I&apos;m a Full-Stack Software Engineer Focused on Building Modern Web Applications.
       </h2>
-      <div className='container flex flex-col-reverse md:flex-row justify-between mx-auto max-w-5xl mt-6'>
-        <div className='md:w-1/2 px-10'>
+      <div className='container flex flex-col-reverse md:flex-row justify-between items-center mx-auto max-w-5xl mt-6'>
+        <div className='md:w-1/2 p-2'>
             <p className='mb-4'>
             As a former petroleum engineer, I bring a unique perspective to the software engineering field.
             My background in the oil and gas industry has given me a solid understanding of complex systems
@@ -29,14 +30,14 @@ export default function About() {
             playing video games with my friends, running or spending time with family.
             </p>
         </div>
-        <div className='flex items-center p-2'>
+        <div className='flex items-center p-6 sm:p-2'>
           <Image
           src={aboutMePic}
           width='600'
           height='400'
           alt='Carter Brooks Profile Picture'
           priority
-          className='shadow-lg shadow-[#EE756A] rounded-md'
+          className='shadow-test hover:shadow-[#EE756A] rounded-md'
           />
         </div>
       </div>
@@ -45,6 +46,7 @@ export default function About() {
       </div>
       <div className='mt-10'>
         Spotify Recent Played?
+        <RecentlyPlayed />
       </div>
     </div>
   )

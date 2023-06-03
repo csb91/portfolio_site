@@ -11,6 +11,10 @@ const nextConfig = {
         port: '',
         pathname: '/600x400.png',
       },
+      {
+        protocol: 'https',
+        hostname: '**.scdn.co',
+      },
     ],
   },
 }

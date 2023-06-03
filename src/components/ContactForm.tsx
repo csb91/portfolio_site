@@ -5,7 +5,7 @@ import clsx from "clsx";
 import { contact } from "@/lib/api";
 import Input from "./Input";
 import { useState, ChangeEvent } from "react";
-import { formData } from "@/interfaces/interfaces";
+import { formData } from "@/lib/interfaces";
 import { ToastContainer, toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 

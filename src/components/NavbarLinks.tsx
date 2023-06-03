@@ -4,7 +4,7 @@ import { FC } from "react";
 import Link from "next/link";
 import clsx from "clsx";
 import { usePathname } from "next/navigation";
-import { NavbarLinksProps } from "@/interfaces/interfaces";
+import { NavbarLinksProps } from "@/lib/interfaces";
 
 
 const NavbarLinks: FC<NavbarLinksProps> = ({ link }) => {

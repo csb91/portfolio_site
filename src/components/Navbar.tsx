@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Menu } from "react-feather";
-import { linkInfo } from "@/interfaces/interfaces";
+import { linkInfo } from "@/lib/interfaces";
 import NavbarLinks from "./NavbarLinks";
 
 

@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import Link from "next/link";
 import { Twitter, GitHub, Linkedin } from "react-feather";
-import { socialMedia } from "@/interfaces/interfaces";
+import { socialMedia } from "@/lib/interfaces";
 
 const socials: socialMedia[] = [
   {platform: 'Twitter', url: 'https://twitter.com/CarterBrooksDev'},
