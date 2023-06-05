@@ -9,7 +9,7 @@ export default async function handler(req: NextRequest) {
   const response = await getRecentlyPlayed();
   const { items } = await response.json();
 
-  const tracks = items.slice(0,10).map((track) => ({
+  const tracks = items.slice(0,5).map((track) => ({
     artist: track.track.artists.map((_artist) => _artist.name).join(', '),
     songUrl: track.track.external_urls.spotify,
     title: track.track.name,

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import aboutMePic from '../../../public/IMG_5335.jpg'
 import RecentlyPlayed from '@/components/RecentlyPlayed';
+import Spotify from '@/components/Spotify';
 
 export default function About() {
   return (
@@ -41,12 +42,8 @@ export default function About() {
           />
         </div>
       </div>
-      <div className='mt-10'>
-        Technologies/Skills - Maybe put on front page?
-      </div>
-      <div className='mt-10'>
-        Spotify Recent Played?
-        <RecentlyPlayed />
+      <div className='mt-20 mb-20'>
+        <Spotify />
       </div>
     </div>
   )
