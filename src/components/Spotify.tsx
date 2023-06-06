@@ -7,12 +7,13 @@ import SpotifyLogo from '../../public/Spotify_Logo_RGB_Green.png'
 const Spotify = () => {
   return (
     <div className='container flex flex-col mx-auto'>
-      <div className='mx-auto'>
+      <div className='container flex mx-auto'>
       <Image
         src={SpotifyLogo}
-        width='200'
+        width='150'
         height='auto'
         alt='Spotify Logo'
+        className='justify-start'
       />
       </div>
       <div className='container flex flex-colum md:flex-row'>
@@ -24,3 +25,7 @@ const Spotify = () => {
 }
 
 export default Spotify;
+
+
+
+//Add link to spotify from logo

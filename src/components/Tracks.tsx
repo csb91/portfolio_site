@@ -5,7 +5,12 @@ const Tracks = ({ track }) => {
 
   return (
     <li className='border'>
-      <Link href={track.songUrl}>
+      <Link
+        href={track.songUrl}
+        target='_blank'
+        rel='noreferrer'
+        aria-label={`${track.title} spotify link`}
+      >
         <div className='container flex flex-row'>
           <div>
           <Image
@@ -16,10 +21,10 @@ const Tracks = ({ track }) => {
           />
           </div>
           <div className='container flex flex-col text-left mt-auto mb-auto'>
-            <div className='font-bold'>
+            <div className='font-bold text-sm'>
             {track.title}
             </div>
-            <div>
+            <div className='text-xs'>
             {track.artist}
             </div>
           </div>
@@ -30,3 +35,6 @@ const Tracks = ({ track }) => {
 }
 
 export default Tracks;
+
+
+//Add custom numbering w/ circle and number enclosed
