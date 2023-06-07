@@ -15,11 +15,10 @@ const NowPlaying = () => {
   }
 
   return (
-    <div className='container flex flex-col border p-4 items-center'>
+    <div className='container flex flex-col p-4 items-center'>
       <div className='font-bold text-lg underline'>
         Now Playing
       </div>
-      {console.log(data)}
       {data?.isPlaying &&
         <>
           <div className='flex flex-col my-auto items-center'>
@@ -29,22 +28,22 @@ const NowPlaying = () => {
               rel='noopener noreferrer'
               aria-label={`Spotify link for ${data?.track} by ${data?.artist}`}
             >
-            <div className='flex justify-center'>
-              <Image
-                src={data?.albumImageUrl}
-                width={250}
-                height={250}
-                alt={`${data?.album} album art`}
-              />
-            </div>
-            <div className='container flex flex-col items-center mt-4'>
-              <div className='font-bold text-center'>
-                {data?.title}
+              <div className='flex justify-center'>
+                <Image
+                  src={data?.albumImageUrl}
+                  width={250}
+                  height={250}
+                  alt={`${data?.album} album art`}
+                />
               </div>
-              <div className='text-sm text-center max-w-md'>
-                {data?.artist}
+              <div className='container flex flex-col items-center mt-4'>
+                <div className='font-bold text-center'>
+                  {data?.title}
+                </div>
+                <div className='text-sm text-center max-w-md'>
+                  {data?.artist}
+                </div>
               </div>
-            </div>
             </Link>
           </div>
         </>

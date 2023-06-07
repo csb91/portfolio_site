@@ -4,7 +4,7 @@ import Link from "next/link";
 const Tracks = ({ track, ind }) => {
 
   return (
-    <li className='container flex items-center border h-20'>
+    <li className='container flex items-center h-20'>
       <Link
         href={track.songUrl}
         target='_blank'
@@ -12,10 +12,8 @@ const Tracks = ({ track, ind }) => {
         aria-label={`Spotify link for ${track.title} by ${track.artist}`}
       >
         <div className='container flex flex-row items-center'>
-          <div className='border rounded-full m-1 px-2.5 py-1.5 h-1.2'>
-            <div className='text-xs font-bold m-1'>
-              {ind}
-            </div>
+          <div className='font-bold m-1 pr-4'>
+            {ind}
           </div>
           <div className='flex-shrink-0'>
             <Image
@@ -27,10 +25,10 @@ const Tracks = ({ track, ind }) => {
           </div>
           <div className='container flex flex-col text-left pl-1'>
             <div className='font-bold text-sm overflow-hidden text-ellipsis max-h-10'>
-            {track.title}
+              {track.title}
             </div>
             <div className='text-xs overflow-hidden text-ellipsis max-h-9'>
-            {track.artist}
+              {track.artist}
             </div>
           </div>
         </div>

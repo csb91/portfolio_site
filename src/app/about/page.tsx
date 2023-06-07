@@ -42,7 +42,7 @@ export default function About() {
           />
         </div>
       </div>
-      <Spotify className={'mt-20 mb-20 p-4'}/>
+      <Spotify className={'mt-20 mb-20'}/>
     </div>
   )
 }

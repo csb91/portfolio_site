@@ -23,7 +23,7 @@ const Spotify = ({ className }) => {
         />
       </Link>
       </div>
-      <div className='candy-mesh rounded-md container flex flex-col md:flex-row mx-auto'>
+      <div className='candy-mesh rounded-md container flex flex-col md:flex-row mx-auto border-2 shadow-xl'>
         <div className='container flex justify-center mx-auto'>
           <NowPlaying />
         </div>

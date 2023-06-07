@@ -15,7 +15,7 @@ const RecentlyPlayed = () => {
   }
 
   return (
-    <div className='container flex flex-col border p-4 justify-center'>
+    <div className='container flex flex-col p-4 justify-center'>
       <div className='text-center text-lg font-bold underline'>
         Recently Played
       </div>
