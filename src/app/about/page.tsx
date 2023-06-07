@@ -27,7 +27,7 @@ export default function About() {
             and am excited to continue building my career in the tech industry.
             </p>
             <p>
-            When I&apos;m not coding, in my free time I enjoy traveling with my wife, Crystal, finding new music,
+            When I&apos;m not coding, in my free time I enjoy traveling with my wife, Crystal, listening to music,
             playing video games with my friends, running or spending time with family.
             </p>
         </div>
@@ -42,9 +42,7 @@ export default function About() {
           />
         </div>
       </div>
-      <div className='mt-20 mb-20'>
-        <Spotify />
-      </div>
+      <Spotify className={'mt-20 mb-20 p-4'}/>
     </div>
   )
 }

@@ -2,8 +2,8 @@
 
 import useSWR from 'swr';
 import Tracks from './Tracks';
-import Image from 'next/image';
-import SpotifyLogo from '../../public/Spotify_Logo_RGB_Green.png'
+import clsx from 'clsx';
+import { Circle } from "react-feather";
 import { fetcher } from '@/lib/api';
 
 const RecentlyPlayed = () => {
@@ -15,13 +15,13 @@ const RecentlyPlayed = () => {
   }
 
   return (
-    <div className='container flex flex-col border w-1/2 p-10'>
-      <div className='text-center font-bold justify-start'>
+    <div className='container flex flex-col border p-4 justify-center'>
+      <div className='text-center text-lg font-bold underline'>
         Recently Played
       </div>
-      <ol className='list-decimal'>
+      <ol>
         {data.tracks.map((track, index) => (
-          <Tracks track={track} key={index}/>
+          <Tracks track={track} ind={index + 1} key={index} />
         ))}
       </ol>
     </div>
