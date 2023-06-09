@@ -14,6 +14,9 @@ export default async function Project() {
       <h2 className='text-2xl text-center mt-2 px-4 md:px-64'>
        Check Out Some of My Recent Work.
       </h2>
+      <h2 className='text-2xl text-center mt-2 px-4 md:px-64'>
+       Technologies I Currently Use.
+      </h2>
       <div className='mt-2 mb-4'>
         <Image
           src={Swan}
