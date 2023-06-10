@@ -1,6 +1,7 @@
 import '../styles/globals.css';
 import Footer from '../components/Footer';
 import Header from '@/components/Header';
+import Script from 'next/script';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -41,6 +42,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className='h-screen w-screen dark:bg-zinc-800'>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
         <Header />
         <div className='container flex mx-auto min-h-screen justify-center mt-36'>{children}</div>
         <Footer />

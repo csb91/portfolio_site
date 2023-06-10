@@ -18,3 +18,7 @@ export interface socialMedia {
   platform: string;
   url: string;
 }
+
+export interface skillBadges {
+  url: string
+}
