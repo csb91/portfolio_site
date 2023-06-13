@@ -18,13 +18,13 @@ const skills: skillBadges[] = [
 
 const Skills = () => {
   return (
-    <div className='container grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-24 mt-4 mb-10 px-4'>
+    <div className='container grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-24 mt-10 mb-20 px-4'>
       {skills.map((skill, ind) => (
         <Image
         src={skill.url}
         width={100}
         height={100}
-        alt={`${skill.label} Technology Badge`}
+        alt={`${skill.label} Icon`}
         key={ind}
         />
       ))}

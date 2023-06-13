@@ -23,3 +23,10 @@ export interface skillBadges {
   label: string;
   url: string;
 }
+
+export interface project {
+  title: string;
+  description: string;
+  tech: string;
+  github: string;
+}
