@@ -20,5 +20,6 @@ export interface socialMedia {
 }
 
 export interface skillBadges {
-  url: string
+  label: string;
+  url: string;
 }
