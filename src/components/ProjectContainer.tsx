@@ -12,7 +12,7 @@ const ProjectContainer = ({ title, description, tech, github, image, index }) =>
       index % 2 === 0 && 'md:flex-row',
       index % 2 === 1 && 'md:flex-row-reverse')}
     >
-      <div>
+      <div className='sm:hover:scale-125 sm:hover:transition-transform sm:ease-in-out duration-300 delay-150'>
         <Image
           src={image === 'Swan' ? Swan : image === 'BlueOcean' ? BlueOcean : image === 'MVP' ? MVP : ''}
           width={500}
@@ -22,7 +22,7 @@ const ProjectContainer = ({ title, description, tech, github, image, index }) =>
         />
       </div>
       <div className='container flex flex-col justify-center items-center max-w-xl'>
-        <h3 className='text-lg font-bold mb-6'>
+        <h3 className='text-lg font-bold mb-6 mt-1 '>
           {title}
         </h3>
         <div className={clsx('container flex justify-center mb-2',
@@ -42,7 +42,7 @@ const ProjectContainer = ({ title, description, tech, github, image, index }) =>
             target='_blank'
             rel='noopener noreferrer'
             aria-label={`${title} github repo url`}
-            className='hover:text-cyan-500'
+            className='hover:text-[#EE756A]'
           >
             <GitHub />
           </Link>
