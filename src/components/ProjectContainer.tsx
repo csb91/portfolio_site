@@ -8,7 +8,10 @@ import clsx from "clsx";
 
 const ProjectContainer = ({ title, description, tech, github, image, index }) => {
   return (
-    <div className={clsx('container flex justify-between mt-10 flex-col', index % 2 === 0 && 'md:flex-row', index % 2 === 1 && 'md:flex-row-reverse')}>
+    <div className={clsx('container flex justify-between items-center mt-10 flex-col px-4',
+      index % 2 === 0 && 'md:flex-row',
+      index % 2 === 1 && 'md:flex-row-reverse')}
+    >
       <div>
         <Image
           src={image === 'Swan' ? Swan : image === 'BlueOcean' ? BlueOcean : image === 'MVP' ? MVP : ''}
@@ -22,12 +25,15 @@ const ProjectContainer = ({ title, description, tech, github, image, index }) =>
         <h3 className='text-lg font-bold mb-6'>
           {title}
         </h3>
-        <div className='container flex justify-center mb-2'>
+        <div className={clsx('container flex justify-center mb-2',
+          index % 2 === 0 && 'sm:pl-2',
+          index % 2 === 1 && 'sm:pr-2')}
+        >
           <p className='text-sm'>
             {description}
           </p>
         </div>
-        <div className='mb-2'>
+        <div className='text-sm text-center mb-2'>
           {tech}
         </div>
         <div>
