@@ -41,10 +41,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='h-screen w-screen dark:bg-zinc-800'>
+      <body className='w-screen dark:bg-zinc-800'>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
         <Header />
-        <div className='container flex mx-auto min-h-screen justify-center mt-36'>{children}</div>
+        <div className='container flex mx-auto min-h-screen justify-center mt-40'>{children}</div>
         <Footer />
       </body>
     </html>
