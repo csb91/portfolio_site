@@ -5,7 +5,7 @@ import Spotify from '@/components/Spotify';
 
 export default function About() {
   return (
-    <div>
+    <div id='top'>
       <h1 className='text-4xl text-center'>
         About Me
       </h1>

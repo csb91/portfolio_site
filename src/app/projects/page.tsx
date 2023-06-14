@@ -1,20 +1,21 @@
-import Link from 'next/link';
-import { getAllPosts } from "../../lib/cms";
+import Skills from '@/components/Skills';
+import Projects from '@/components/Projects';
 
 export default async function Project() {
-  const posts = await getAllPosts()
 
   return (
-    <>
     <div>
-      {posts.map((post) =>
-        <Link href={`/projects/${post.slug}`}>
-          <div>
-            <h1>{post.title}</h1>
-          </div>
-        </Link>
-      )}
+      <h1 className='text-4xl text-center'>
+        Projects
+      </h1>
+      <h2 className='text-2xl text-center mt-2 px-4'>
+       Technologies Currently Used.
+      </h2>
+      <Skills />
+      <h2 className='text-2xl text-center mt-2 px-4'>
+       Check Out Some of My Recent Work.
+      </h2>
+      <Projects />
     </div>
-    </>
   )
 }
