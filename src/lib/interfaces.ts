@@ -18,3 +18,16 @@ export interface socialMedia {
   platform: string;
   url: string;
 }
+
+export interface skillBadges {
+  label: string;
+  url: string;
+}
+
+export interface project {
+  title: string;
+  description: string;
+  tech: string;
+  github: string;
+  image: string;
+}
