@@ -1,4 +1,5 @@
 import { jonInfo } from "@/lib/interfaces";
+import JobCard from './JobCard'
 
 const jobList: jonInfo[] = [
   {
@@ -31,8 +32,22 @@ const jobList: jonInfo[] = [
 
 const WorkExperience = () => {
   return (
-    <>
-    </>
+    <div className='container flex flex-col-reverse justify-evenly mx-auto border-2 rounded-md md:flex-row mt-6 mb-6 p-4 rainbow-mesh max-w-5xl shadow-lg'>
+      <div>
+
+      </div>
+      <div>
+        {jobList.map((job, index) => (
+          <JobCard
+            title={job.title}
+            company={job.company}
+            dates={job.dates}
+            description={job.description}
+            key={index}
+          />
+        ))}
+      </div>
+    </div>
   )
 }
 
