@@ -12,8 +12,8 @@ export default function About() {
       <h2 className='text-2xl text-center mt-2'>
         I&apos;m a Full-Stack Software Engineer Focused on Building Modern Web Applications.
       </h2>
-      <div className='container flex flex-col-reverse md:flex-row justify-between items-center mx-auto max-w-6xl mt-6'>
-        <div className='md:w-1/2 p-2'>
+      <div className='container flex flex-col-reverse lg:flex-row justify-between items-center mx-auto max-w-6xl mt-6'>
+        <div className='w-5/6 md:w-3/4 lg:w-1/2 p-2'>
             <p className='mb-4'>
             As a former petroleum engineer, I bring a unique perspective to the software engineering field.
             My background in the oil and gas industry has given me a solid understanding of complex systems
