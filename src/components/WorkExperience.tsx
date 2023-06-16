@@ -61,7 +61,7 @@ const WorkExperience = () => {
 
   return (
     <div className='container mx-auto flex flex-col justify-between border-2 rounded-md md:flex-row mt-6 mb-6 p-4 h-[450px] max-w-5xl rainbow-mesh shadow-lg'>
-      <div className='container mx-auto flex flex-row sm:flex-col border-2 rounded-tl-md rounded-bl-md overflow-x-scroll sm:w-1/3'>
+      <div className='container mx-auto flex flex-grow flex-row md:flex-col border-2 rounded-tl-md rounded-tr-md md:rounded-bl-md md:w-1/3 overflow-x-scroll overflow-y-hidden scrollbar'>
         {jobList.map((job, index) => (
           <JobSelector
           selectedJob={selectedJob}
@@ -70,7 +70,7 @@ const WorkExperience = () => {
           key={index}/>
         ))}
       </div>
-      <div className='container mx-auto flex flex-grow border-2 border-t-0 sm:border-l-0 sm:border-t-2 rounded-tr-md rounded-br-md overflow-auto'>
+      <div className='container mx-auto flex flex-grow border-2 border-t-0 rounded-br-md rounded-bl-md h-5/6 md:border-l-0 md:border-t-2 md:rounded-tr-md overflow-y-auto'>
         {jobList.map((job, index) => (
           <JobCard
             selectedJob={selectedJob}
