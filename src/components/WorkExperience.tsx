@@ -50,18 +50,18 @@ const jobList: jonInfo[] = [
     dates: 'September 2010 - May 2015',
     description: [
       'B.S. Petroleum Engineering',
-      '2014 Summer Internship - Decision Frameworks',
-      '2013 Summer Internship - Petro-Hunt LLC'
+      '2014 Summer Internship - Decision Frameworks - Decision Analysis Intern',
+      '2013 Summer Internship - Petro-Hunt LLC - Petroleum Engineer Intern'
     ]
   }
 ]
 
 const WorkExperience = () => {
   const [selectedJob, setSelectedJob] = useState(jobList[0].company)
-
+  console.log('selectedJob', typeof selectedJob)
   return (
     <div className='container mx-auto flex flex-col justify-between border-2 rounded-md sm:flex-row mt-6 mb-6 p-4 h-[450px] max-w-5xl rainbow-mesh shadow-lg'>
-      <div className='container mx-auto flex flex-grow flex-row sm:flex-col border-2 rounded-tl-md rounded-tr-md sm:rounded-bl-md sm:rounded-tr-none sm:w-1/4 md:w-1/4 overflow-x-scroll overflow-y-hidden'>
+      <div className='container mx-auto flex flex-grow flex-row sm:flex-col border-2 rounded-tl-md rounded-tr-md sm:rounded-bl-md sm:rounded-tr-none sm:w-1/4 overflow-x-scroll overflow-y-hidden'>
         {jobList.map((job, index) => (
           <JobSelector
           selectedJob={selectedJob}
