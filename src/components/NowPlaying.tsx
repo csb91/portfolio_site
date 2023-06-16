@@ -10,10 +10,6 @@ const NowPlaying = () => {
   const fetcher = (url) => fetch(url).then((res) => res.json());
   const { data } = useSWR('/api/spotify/now-playing', fetcher)
 
-  if (!data) {
-    console.log('test', data?.isPlaying)
-  }
-
   return (
     <div className='container flex flex-col p-4 items-center'>
       <div className='font-bold text-lg underline'>

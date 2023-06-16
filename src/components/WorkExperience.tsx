@@ -58,7 +58,7 @@ const jobList: jonInfo[] = [
 
 const WorkExperience = () => {
   const [selectedJob, setSelectedJob] = useState(jobList[0].company)
-  console.log('selectedJob', typeof selectedJob)
+
   return (
     <div className='container mx-auto flex flex-col justify-between border-2 rounded-md sm:flex-row mt-6 mb-6 p-4 h-[450px] max-w-6xl rainbow-mesh shadow-lg'>
       <div className='container mx-auto flex flex-grow flex-row sm:flex-col border-2 rounded-tl-md rounded-tr-md sm:rounded-bl-md sm:rounded-tr-none sm:w-1/4 overflow-x-scroll overflow-y-hidden'>
