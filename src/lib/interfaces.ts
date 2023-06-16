@@ -31,3 +31,14 @@ export interface project {
   github: string;
   image: string;
 }
+
+export interface StringArray {
+  [index: number]: string;
+}
+
+export interface jonInfo {
+  title: string;
+  company: string;
+  dates: string;
+  description: StringArray;
+}
