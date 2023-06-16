@@ -13,7 +13,7 @@ const links: linkInfo[] = [
 
 const Navbar = () => {
   return (
-    <div className='container purple-orange bg-clip-text text-transparent h-10 mx-auto pl-4 flex items-center justify-between max-w-6xl'>
+    <div className='container purple-orange bg-clip-text text-transparent h-10 mx-auto pl-4 flex items-center justify-between'>
       <div className='text-xl'>
         <Link href='/'>
           CB Logo

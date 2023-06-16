@@ -37,7 +37,7 @@ const projectSpotlight: project[] = [
 
 const Projects = () => {
   return (
-    <div className='mt-10 mb-20'>
+    <div className='mt-10 mb-20 max-w-6xl'>
       {projectSpotlight.map((project, index) => (
         <ProjectContainer
           title={project.title}

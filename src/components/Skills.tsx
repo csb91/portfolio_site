@@ -18,7 +18,8 @@ const skills: skillBadges[] = [
 
 const Skills = () => {
   return (
-    <div className='container grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-24 mt-10 mb-20 px-4'>
+    <div className='flex justify-center'>
+    <div className='container grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-24 mt-10 mb-20 px-4 max-w-6xl'>
       {skills.map((skill, ind) => (
         <Image
         src={skill.url}
@@ -28,6 +29,7 @@ const Skills = () => {
         key={ind}
         />
       ))}
+    </div>
     </div>
   )
 }
