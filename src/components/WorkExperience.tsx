@@ -1,7 +1,23 @@
+'use client'
+
+import { useState} from "react";
 import { jonInfo } from "@/lib/interfaces";
 import JobCard from './JobCard'
+import JobSelector from "./JobSelector";
 
 const jobList: jonInfo[] = [
+  {
+    title: 'Student',
+    company: 'Hack Reactor',
+    dates: 'October 2022 - January 2023',
+    description:[
+      `Graduated from the Software Engineering Online Immersive Program,
+      completing a total 576 hours of coursework and over 1,000 hours coding.`,
+      `Tackled challenges ranging from data structures to algorithms to full-stack development and
+      testing processes via pair programming and white boarding.`,
+      `Worked on engineering teams to create full-stack apps using Agile methodologies.`
+    ]
+  },
   {
     title: 'Founder',
     company: 'Steria LLC',
@@ -28,17 +44,36 @@ const jobList: jonInfo[] = [
       `Oversee regulatory matters with various state and federal government agencies`
     ]
   },
+  {
+    title: 'Student',
+    company: 'Texas A&M University',
+    dates: 'September 2010 - May 2015',
+    description: [
+      'B.S. Petroleum Engineering',
+      '2014 Summer Internship - Decision Frameworks',
+      '2013 Summer Internship - Petro-Hunt LLC'
+    ]
+  }
 ]
 
 const WorkExperience = () => {
-  return (
-    <div className='container flex flex-col-reverse justify-evenly mx-auto border-2 rounded-md md:flex-row mt-6 mb-6 p-4 rainbow-mesh max-w-5xl shadow-lg'>
-      <div>
+  const [selectedJob, setSelectedJob] = useState(jobList[0].company)
 
+  return (
+    <div className='container mx-auto flex flex-col justify-between border-2 rounded-md md:flex-row mt-6 mb-6 p-4 h-[450px] max-w-5xl rainbow-mesh shadow-lg'>
+      <div className='container mx-auto flex flex-row sm:flex-col border-2 rounded-tl-md rounded-bl-md overflow-x-scroll sm:w-1/3'>
+        {jobList.map((job, index) => (
+          <JobSelector
+          selectedJob={selectedJob}
+          setSelectedJob={setSelectedJob}
+          company={job.company}
+          key={index}/>
+        ))}
       </div>
-      <div>
+      <div className='container mx-auto flex flex-grow border-2 border-t-0 sm:border-l-0 sm:border-t-2 rounded-tr-md rounded-br-md overflow-auto'>
         {jobList.map((job, index) => (
           <JobCard
+            selectedJob={selectedJob}
             title={job.title}
             company={job.company}
             dates={job.dates}
