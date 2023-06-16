@@ -16,7 +16,7 @@ const NavbarLinks: FC<NavbarLinksProps> = ({ link }) => {
   }
 
   return (
-    <li className={clsx("hover:text-purple-500", isActive && 'bg-transparent text-purple-500 underline')}>
+    <li className={clsx("hover:text-[#756AEE]", isActive && 'bg-transparent text-[#756AEE] underline')}>
       <Link href={link.link}>
         {link.label}
       </Link>
