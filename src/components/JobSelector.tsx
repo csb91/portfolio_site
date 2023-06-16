@@ -5,8 +5,8 @@ const JobSelector = ({ selectedJob, setSelectedJob, company }) => {
   }
 
   return (
-    <div className='flex min-w-fit'>
-      <button onClick={handleClick} className='px-4 md:border-b'>
+    <div className='flex flex-grow min-w-fit justify-evenly sm:border-b sm:flex-grow-0 sm:h-12'>
+      <button onClick={handleClick} className='px-2'>
         {company}
       </button>
     </div>
