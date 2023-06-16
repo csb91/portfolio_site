@@ -19,6 +19,7 @@ const ProjectContainer = ({ title, description, tech, github, image, index }) =>
           height={500}
           alt={`${image} Project Image`}
           className='border-2 border-grey-500 shadow-xl rounded-md'
+          priority={title === 'Swan'}
         />
       </div>
       <div className='container flex flex-col justify-center items-center max-w-xl'>
