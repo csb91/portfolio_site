@@ -7,7 +7,7 @@ import SpotifyLogo from '../../public/Spotify_Logo_RGB_Green.png';
 
 const Spotify = ({ className }) => {
   return (
-    <div className={clsx('container flex flex-col mx-auto max-w-5xl', className)}>
+    <div className={clsx('container flex flex-col mx-auto max-w-6xl', className)}>
       <div className='container flex mx-auto justify-start'>
       <Link
         href='https://www.spotify.com'
