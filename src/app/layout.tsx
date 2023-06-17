@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
   creator: 'Carter Brooks',
   icons: {
-    icon: 'fire-favicon.ico'
+    icon: 'milkyway-favicon.ico'
   },
   openGraph: {
     title: 'Carter Brooks | Developer Portfolio',

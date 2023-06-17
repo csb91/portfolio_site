@@ -12,7 +12,7 @@ const JobCard = ({ selectedJob, title, company, dates, description}) => {
         <div className='text-sm'>
           {dates}
         </div>
-        <ul className='text-lg font-bold px-10 py-6 sm:py-10'>
+        <ul className='text-lg px-4 py-6 sm:py-10 sm:px-10'>
           {description?.map((bulletPoint, index) => (
             <li key={index} className='pb-2 flex flex-row'>
               <Disc className='pr-2 pt-1 h-5 w-5'/>
