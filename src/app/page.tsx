@@ -32,11 +32,11 @@ export default async function Home() {
           </p>
         </div>
         <div className='flex'>
-          <ChevronRight className='text-black'/>
+          <ChevronRight className='text-black dark:text-white'/>
           <Link href='/projects'>Checkout My Projects</Link>
         </div>
         <div className='flex flex-row'>
-          <ChevronRight className='text-black'/>
+          <ChevronRight className='text-black dark:text-white'/>
           <Link href='/contact'>Contact Me</Link>
         </div>
       </div>

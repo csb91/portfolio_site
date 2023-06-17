@@ -5,14 +5,14 @@ export default async function Project() {
 
   return (
     <div>
-      <h1 className='text-4xl text-center'>
+      <h1 className='text-4xl text-center purple-orange bg-clip-text text-transparent'>
         Projects
       </h1>
-      <h2 className='text-2xl text-center mt-2 px-4'>
+      <h2 className='text-2xl text-center mt-2 px-4 purple-orange bg-clip-text text-transparent'>
        Technologies Currently Used.
       </h2>
       <Skills />
-      <h2 className='text-2xl text-center mt-2 px-4'>
+      <h2 className='text-2xl text-center mt-2 px-4 purple-orange bg-clip-text text-transparent'>
        Check Out Some of My Recent Work.
       </h2>
       <Projects />

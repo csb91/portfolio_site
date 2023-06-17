@@ -21,8 +21,8 @@ const NavbarLinks: FC<NavbarLinksProps> = ({ link, setIsOpen }) => {
   }
 
   return (
-    <li className={clsx("hover:text-[#756AEE] py-2 px-1.5 sm:p-0", isActive && 'bg-transparent text-[#756AEE] underline')}>
-      <button onClick={handleClick}>
+    <li className={clsx("hover:text-[#756AEE] py-2 px-1.5 sm:p-0", isActive && 'bg-transparent text-[#756AEE]')}>
+      <button className='underline' onClick={handleClick}>
         <Link href={link.link}>
           {link.label}
         </Link>

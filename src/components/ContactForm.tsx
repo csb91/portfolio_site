@@ -46,7 +46,7 @@ const ContactForm = () => {
 
   return (
     <>
-      <form onSubmit={handleSubmit} className='flex flex-col border-2 rounded-md md:w-1/2 p-2'>
+      <form onSubmit={handleSubmit} className='flex flex-col border-2 rounded-md md:w-1/2 p-2 dark:text-white'>
         <label htmlFor='name'>Name</label>
         <Input
           required
@@ -81,7 +81,7 @@ const ContactForm = () => {
         <textarea
           required
           id='message'
-          className='border-solid border-gray border-2 px-6 py-2 text-md rounded-md shadow-md focus:outline-[#EE756A]'
+          className='border-solid border-gray border-2 px-6 py-2 text-md rounded-md shadow-md focus:outline-[#EE756A] dark:bg-zinc-800'
           placeholder='Message'
           rows={4}
           value = {formState.message}
@@ -91,7 +91,7 @@ const ContactForm = () => {
           {!isLoading && <button
             type='submit'
             className={clsx(
-              'border-2 rounded-md mt-4 h-8 w-1/4 shadow-md bg-white hover:border-[#EE756A]')}
+              'border-2 rounded-md mt-4 h-8 w-1/4 shadow-md bg-white hover:border-[#EE756A] dark:bg-zinc-800 dark:text-white')}
           >
           Send
           </button>}
@@ -99,7 +99,7 @@ const ContactForm = () => {
             type='submit'
             disabled
             className={clsx(
-              'border-2 rounded-md mt-4 h-8 w-1/4 shadow-md bg-white hover:border-[#EE756A]')}
+              'border-2 rounded-md mt-4 h-8 w-1/4 shadow-md bg-white hover:border-[#EE756A] dark:bg-zinc-800')}
           >
             <div
               className="inline-block mt-0.5 h-6 w-6 animate-spin text-[#EE756A] rounded-full border-4 border-solid border-current border-r-transparent motion-reduce:animate-[spin_1.5s_linear_infinite]"

@@ -8,7 +8,7 @@ import clsx from "clsx";
 
 const ProjectContainer = ({ title, description, tech, github, image, index }) => {
   return (
-    <div className={clsx('container flex justify-between items-center mt-10 flex-col px-4',
+    <div className={clsx('container flex justify-between items-center mt-10 flex-col px-4 dark:text-white',
       index % 2 === 0 && 'md:flex-row',
       index % 2 === 1 && 'md:flex-row-reverse')}
     >

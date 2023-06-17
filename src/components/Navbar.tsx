@@ -1,11 +1,12 @@
 'use client'
 
 import Link from "next/link";
-import { Menu } from "react-feather";
+import Image from "next/image";
 import { linkInfo } from "@/lib/interfaces";
 import NavbarLinks from "./NavbarLinks";
 import HamburgerMenu from "./HamburgerMenu";
 import { useState } from "react";
+import MW from '../../public/milkyway-favicon.ico'
 import clsx from "clsx";
 
 
@@ -22,9 +23,16 @@ const Navbar = () => {
   return (
     <div className={clsx('container purple-orange bg-clip-text text-transparent  mx-auto pl-4 flex items-center justify-between', isOpen && 'flex-col flex-grow')}>
       <div className='flex flex-row flex-grow justify-between w-full items-center'>
-        <div className='text-xl'>
+        <div className='flex flex-row justify-between'>
+          <Image
+            src={MW}
+            height={10}
+            width={20}
+            className='mr-2'/>
           <Link href='/'>
-            CB Logo
+            <div className='text-sm font-bold hover:text-[#EE756A]'>
+              Carter Brooks
+            </div>
           </Link>
         </div>
         <div className='outline 1px sm:hidden mr-4 z-10'>

@@ -1,18 +1,17 @@
 import Image from 'next/image';
-import aboutMePic from '../../../public/IMG_5335.jpg'
-import RecentlyPlayed from '@/components/RecentlyPlayed';
+import aboutMePic from '../../../public/IMG_5335.jpg';
 import Spotify from '@/components/Spotify';
 
 export default function About() {
   return (
     <div>
-      <h1 className='text-4xl text-center'>
+      <h1 className='text-4xl text-center purple-orange bg-clip-text text-transparent'>
         About Me
       </h1>
-      <h2 className='text-2xl text-center mt-2'>
+      <h2 className='text-2xl text-center mt-2 purple-orange bg-clip-text text-transparent'>
         I&apos;m a Full-Stack Software Engineer Focused on Building Modern Web Applications.
       </h2>
-      <div className='container flex flex-col-reverse lg:flex-row justify-between items-center mx-auto max-w-6xl mt-6'>
+      <div className='container flex flex-col-reverse lg:flex-row justify-between items-center mx-auto max-w-6xl mt-6 dark:text-white'>
         <div className='w-5/6 md:w-3/4 lg:w-1/2 p-2'>
             <p className='mb-4'>
             As a former petroleum engineer, I bring a unique perspective to the software engineering field.
