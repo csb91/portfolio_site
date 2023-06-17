@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       boxShadow: {
-        'test': '12px 12px 0 1px rgba(117, 106, 255, .8)',
+        'purple-blur': '12px 12px 10px 1px rgba(117, 106, 255, .8)',
+        'purple-blur-2': '6px 6px 10px 1px rgba(117, 106, 255, .8)',
       }
     },
   },

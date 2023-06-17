@@ -13,7 +13,7 @@ export default function Contact() {
       <h2 className='text-2xl text-center mt-2 px-4 lg:px-64'>
         I&apos;m currently looking for new opportunities. Please feel free to reach out via the contact form or using one of the other methods listed.
       </h2>
-      <div className='container flex flex-col-reverse justify-evenly mx-auto border-2 rounded-md md:flex-row mt-6 mb-6 p-4 rainbow-mesh max-w-6xl shadow-lg'>
+      <div className='container flex flex-col-reverse justify-evenly mx-auto border-2 rounded-md md:flex-row mt-6 mb-6 p-4 new-mesh max-w-6xl shadow-lg'>
         <div className='container flex flex-col justify-center mt-6 md:mt-0 md:mb-0 md:mr-10 border-2 rounded-md md:w-96 p-4'>
           <div className='flex flex-row mx-4 mb-6'>
             <Phone className='mr-4'/>

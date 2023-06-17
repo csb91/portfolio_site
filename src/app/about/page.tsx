@@ -38,7 +38,7 @@ export default function About() {
           height='400'
           alt='Carter Brooks Profile Picture'
           priority
-          className='shadow-test hover:shadow-[#EE756A] rounded-md'
+          className='shadow-purple-blur hover:shadow-[#EE756A] rounded-md'
           />
         </div>
       </div>
