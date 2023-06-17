@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 import { NavbarLinksProps } from "@/lib/interfaces";
 
 
-const NavbarLinks: FC<NavbarLinksProps> = ({ link }) => {
+const NavbarLinks: FC<NavbarLinksProps> = ({ link, setIsOpen }) => {
   const pathname = usePathname();
   let isActive = false;
 
@@ -15,11 +15,18 @@ const NavbarLinks: FC<NavbarLinksProps> = ({ link }) => {
     isActive = true;
   }
 
+  const handleClick = (e) => {
+    e.preventDefault();
+    setIsOpen(false);
+  }
+
   return (
-    <li className={clsx("hover:text-[#756AEE]", isActive && 'bg-transparent text-[#756AEE] underline')}>
-      <Link href={link.link}>
-        {link.label}
-      </Link>
+    <li className={clsx("hover:text-[#756AEE] py-2 px-1.5 sm:p-0", isActive && 'bg-transparent text-[#756AEE] underline')}>
+      <button onClick={handleClick}>
+        <Link href={link.link}>
+          {link.label}
+        </Link>
+      </button>
     </li>
   )
 }

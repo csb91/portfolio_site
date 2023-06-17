@@ -17,7 +17,7 @@ export default function Experience() {
           rel="noopener noreferrer"
           aria-label='Carter Brooks Resume PDF Link'
         >
-          <button className='shadow-purple-blur-2 border-2 rounded-md mt-4 h-16 w-40 bg-white hover:border-[#EE756A] hover:shadow-[#EE756A]'>
+          <button type='button' className='shadow-purple-blur-2 border-2 rounded-md mt-4 h-16 w-40 bg-white hover:border-[#EE756A] hover:shadow-[#EE756A]'>
             Resume
           </button>
         </Link>

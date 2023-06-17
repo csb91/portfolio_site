@@ -8,7 +8,7 @@ export default async function Home() {
 
   return (
     <div className='container flex flex-col-reverse justify-end lg:flex-row flex-grow mx-auto lg:mt-20 purple-orange bg-clip-text text-transparent lg:justify-evenly max-w-6xl'>
-      <div className='flex flex-col'>
+      <div className='flex flex-col px-2'>
         <div>
           <h1 className='text-3xl pb-2 purple-orange bg-clip-text text-transparent'>
             Hi, my name is

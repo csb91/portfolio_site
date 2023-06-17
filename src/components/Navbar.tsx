@@ -1,7 +1,12 @@
+'use client'
+
 import Link from "next/link";
 import { Menu } from "react-feather";
 import { linkInfo } from "@/lib/interfaces";
 import NavbarLinks from "./NavbarLinks";
+import HamburgerMenu from "./HamburgerMenu";
+import { useState } from "react";
+import clsx from "clsx";
 
 
 const links: linkInfo[] = [
@@ -12,34 +17,28 @@ const links: linkInfo[] = [
 ]
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div className='container purple-orange bg-clip-text text-transparent h-10 mx-auto pl-4 flex items-center justify-between'>
-      <div className='text-xl'>
-        <Link href='/'>
-          CB Logo
-        </Link>
+    <div className={clsx('container purple-orange bg-clip-text text-transparent  mx-auto pl-4 flex items-center justify-between', isOpen && 'flex-col flex-grow')}>
+      <div className='flex flex-row flex-grow justify-between w-full items-center'>
+        <div className='text-xl'>
+          <Link href='/'>
+            CB Logo
+          </Link>
+        </div>
+        <div className='outline 1px sm:hidden mr-4 z-10'>
+          <HamburgerMenu isOpen={isOpen} setIsOpen={setIsOpen} />
+        </div>
       </div>
-      <div className='hidden sm:flex'>
+      <div className={clsx('flex', !isOpen && 'hidden sm:block', isOpen && 'flex-col')}>
         <nav>
-          <ul className='flex w-96 justify-evenly'>
+          <ul className={clsx('flex w-96 justify-evenly', isOpen && 'flex-col mt-8 sm:mt-0')}>
             {links.map((link , index) => (
-              <NavbarLinks key={index} link={link} />
+              <NavbarLinks key={index} link={link} setIsOpen={setIsOpen} />
             ))}
           </ul>
         </nav>
-      </div>
-      <div className='outline 1px sm:hidden mr-4'>
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <defs>
-            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="#F472B6" />
-              <stop offset="50%" stopColor="#7C3AED" />
-              <stop offset="100%" stopColor="#3B82F6" />
-            </linearGradient>
-          </defs>
-          <rect x="0" y="0" width="24" height="24" rx="4" ry="4" fill="url(#gradient)" />
-          <Menu className='text-white text-24' />
-        </svg>
       </div>
     </div>
   )
