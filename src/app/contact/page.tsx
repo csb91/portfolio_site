@@ -2,9 +2,11 @@ import ContactForm from "@/components/ContactForm";
 import { Mail, Phone } from 'react-feather';
 import SocialLinks from "@/components/SocialLinks";
 
+export const metadata = {
+  title: 'Contact'
+}
 
 export default function Contact() {
-
   return (
     <div className='flex-col px-4 sm:px-0'>
       <h1 className='text-4xl text-center purple-orange bg-clip-text text-transparent'>

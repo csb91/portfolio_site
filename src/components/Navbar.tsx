@@ -26,9 +26,11 @@ const Navbar = () => {
         <div className='flex flex-row justify-between'>
           <Image
             src={MW}
-            height={10}
+            height={'auto'}
             width={20}
-            className='mr-2'/>
+            className='mr-2'
+            alt='Milky Way favicon'
+          />
           <Link href='/'>
             <div className='text-sm font-bold hover:text-[#EE756A]'>
               Carter Brooks

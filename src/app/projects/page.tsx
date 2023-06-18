@@ -1,8 +1,24 @@
 import Skills from '@/components/Skills';
 import Projects from '@/components/Projects';
 
-export default async function Project() {
+export const metadata = {
+  title: 'Projects',
+  openGraph: {
+    title: 'Carter Brooks | Developer Portfolio',
+    url: 'https://carterbrooks.dev',
+    images: [
+      {
+        url: 'https://nextjs.org/og.png',
+        width: 800,
+        height: 600,
+      },
+    ],
+    locale: 'en-US',
+    type: 'website'
+  },
+}
 
+export default async function Project() {
   return (
     <div>
       <h1 className='text-4xl text-center purple-orange bg-clip-text text-transparent'>

@@ -2,6 +2,10 @@ import Image from 'next/image';
 import aboutMePic from '../../../public/IMG_5335.jpg';
 import Spotify from '@/components/Spotify';
 
+export const metadata = {
+  title: 'About'
+}
+
 export default function About() {
   return (
     <div>

@@ -34,7 +34,7 @@ const ProjectContainer = ({ title, description, tech, github, image, index }) =>
             {description}
           </p>
         </div>
-        <div className='text-sm text-center mb-2'>
+        <div className='text-sm text-center font-bold mb-2'>
           {tech}
         </div>
         <div>

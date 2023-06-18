@@ -1,6 +1,9 @@
-import Link from "next/link"
-import Image from "next/image"
-import WorkExperience from "@/components/WorkExperience"
+import Link from "next/link";
+import WorkExperience from "@/components/WorkExperience";
+
+export const metadata = {
+  title: 'Experience'
+}
 
 export default function Experience() {
   return (
