@@ -3,7 +3,22 @@ import { Mail, Phone } from 'react-feather';
 import SocialLinks from "@/components/SocialLinks";
 
 export const metadata = {
-  title: 'Contact'
+  title: 'Contact',
+  openGraph: {
+    title: 'Contact | Carter Brooks',
+    description: 'Carter Brooks Software Developer Contact Page',
+    url: 'https://carterbrooks.dev',
+    siteName: 'Carter Brooks',
+    images: [
+      {
+        url: 'https://carterbrooks.dev/opengraph-image',
+        width: 1920,
+        height: 1280,
+      },
+    ],
+    locale: 'en-US',
+    type: 'website'
+  },
 }
 
 export default function Contact() {

@@ -3,7 +3,22 @@ import aboutMePic from '../../../public/IMG_5335.jpg';
 import Spotify from '@/components/Spotify';
 
 export const metadata = {
-  title: 'About'
+  title: 'About',
+  openGraph: {
+    title: 'About | Carter Brooks',
+    description: 'Carter Brooks Software Developer About Page',
+    url: 'https://carterbrooks.dev',
+    siteName: 'Carter Brooks',
+    images: [
+      {
+        url: 'https://carterbrooks.dev/opengraph-image',
+        width: 1920,
+        height: 1280,
+      },
+    ],
+    locale: 'en-US',
+    type: 'website'
+  },
 }
 
 export default function About() {

@@ -2,7 +2,22 @@ import Link from "next/link";
 import WorkExperience from "@/components/WorkExperience";
 
 export const metadata = {
-  title: 'Experience'
+  title: 'Experience',
+  openGraph: {
+    title: 'Experience | Carter Brooks',
+    description: 'Carter Brooks Software Developer Experience Page',
+    url: 'https://carterbrooks.dev',
+    siteName: 'Carter Brooks',
+    images: [
+      {
+        url: 'https://carterbrooks.dev/opengraph-image',
+        width: 1920,
+        height: 1280,
+      },
+    ],
+    locale: 'en-US',
+    type: 'website'
+  },
 }
 
 export default function Experience() {

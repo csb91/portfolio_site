@@ -4,19 +4,22 @@ import Projects from '@/components/Projects';
 export const metadata = {
   title: 'Projects',
   openGraph: {
-    title: 'Carter Brooks | Developer Portfolio',
+    title: 'Projects | Carter Brooks',
+    description: 'Carter Brooks Software Developer Projects Page',
     url: 'https://carterbrooks.dev',
+    siteName: 'Carter Brooks',
     images: [
       {
-        url: 'https://nextjs.org/og.png',
-        width: 800,
-        height: 600,
+        url: 'https://carterbrooks.dev/opengraph-image',
+        width: 1920,
+        height: 1280,
       },
     ],
     locale: 'en-US',
     type: 'website'
   },
 }
+
 
 export default async function Project() {
   return (

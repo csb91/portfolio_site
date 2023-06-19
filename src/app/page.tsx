@@ -1,11 +1,27 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import profilePic from '../../public/profile_pic.png'
+import profilePic from '../../public/profile_pic.png';
 import { ChevronRight } from 'react-feather';
 
+export const metadata = {
+  openGraph: {
+    title: 'Carter Brooks',
+    description: 'Carter Brooks Software Developer Portfolio',
+    url: 'https://carterbrooks.dev',
+    siteName: 'Carter Brooks',
+    images: [
+      {
+        url: 'https://carterbrooks.dev/opengraph-image',
+        width: 1920,
+        height: 1280,
+      },
+    ],
+    locale: 'en-US',
+    type: 'website'
+  },
+}
 
 export default async function Home() {
-
   return (
     <div className='container flex flex-col-reverse justify-end lg:flex-row flex-grow mx-auto lg:mt-20 purple-orange bg-clip-text text-transparent lg:justify-evenly max-w-6xl'>
       <div className='flex flex-col px-2'>
