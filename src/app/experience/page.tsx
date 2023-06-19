@@ -1,5 +1,5 @@
 import Link from "next/link";
-import WorkExperience from "@/components/WorkExperience";
+import Experiences from "@/components/Experiences";
 
 export const metadata = {
   title: 'Experience',
@@ -38,7 +38,7 @@ export default function Experience() {
           </button>
         </Link>
       </div>
-      <WorkExperience />
+      <Experiences />
     </div>
   )
 }

@@ -32,7 +32,11 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
       res.json({data: 'Success'})
     } catch (error) {
-      res.status(400).json({message: error.message})
+      if (error instanceof Error) {
+        res.status(400).json({message: error.message})
+      } else {
+        res.status(400).json({message: 'An Error Occurred'})
+      }
     }
   } else {
     res.status(400).json({message: 'Bad Request'})

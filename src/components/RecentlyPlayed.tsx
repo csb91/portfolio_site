@@ -7,7 +7,7 @@ import { Circle } from "react-feather";
 import { fetcher } from '@/lib/api';
 
 const RecentlyPlayed = () => {
-  const fetcher = (url) => fetch(url).then((res) => res.json());
+  const fetcher = (url: string) => fetch(url).then((res) => res.json());
   const { data } = useSWR('/api/spotify/recently-played', fetcher)
 
   if (!data) {

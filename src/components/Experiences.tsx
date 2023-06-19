@@ -1,11 +1,11 @@
 'use client'
 
 import { useState} from "react";
-import { jonInfo } from "@/lib/interfaces";
+import { jobInfo } from "@/lib/interfaces";
 import JobCard from './JobCard'
 import JobSelector from "./JobSelector";
 
-const jobList: jonInfo[] = [
+const jobList: jobInfo[] = [
   {
     title: 'Student',
     company: 'Hack Reactor',
@@ -56,7 +56,7 @@ const jobList: jonInfo[] = [
   }
 ]
 
-const WorkExperience = () => {
+const Experiences = () => {
   const [selectedJob, setSelectedJob] = useState(jobList[0].company)
 
   return (
@@ -86,4 +86,4 @@ const WorkExperience = () => {
   )
 }
 
-export default WorkExperience;
+export default Experiences;

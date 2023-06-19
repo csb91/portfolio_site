@@ -1,7 +1,9 @@
 import clsx from "clsx";
+import { MouseEvent } from "react";
+import { JobSelectorProps } from "@/lib/interfaces";
 
-const JobSelector = ({ selectedJob, setSelectedJob, company }) => {
-  const handleClick = (e) => {
+const JobSelector = ({ selectedJob, setSelectedJob, company }: JobSelectorProps) => {
+  const handleClick = (e: MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     setSelectedJob(company)
   }

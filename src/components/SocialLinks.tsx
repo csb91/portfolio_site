@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import Link from "next/link";
 import { Twitter, GitHub, Linkedin } from "react-feather";
-import { socialMedia } from "@/lib/interfaces";
+import { socialMedia, SocialLinksProps } from "@/lib/interfaces";
 
 const socials: socialMedia[] = [
   {platform: 'Twitter', url: 'https://twitter.com/CarterBrooksDev'},
@@ -9,7 +9,7 @@ const socials: socialMedia[] = [
   {platform: 'Linkedin', url: 'https://www.linkedin.com/in/carterbrooks91/'}
 ]
 
-const SocialLinks = ({ classNameContainer, classNameLinks }) => {
+const SocialLinks = ({ classNameContainer, classNameLinks }: SocialLinksProps) => {
 
   return (
     <div className={clsx('container flex flex-row', classNameContainer)}>

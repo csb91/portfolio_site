@@ -1,6 +1,7 @@
 import { Cpu, Disc } from "react-feather";
+import { JobCardProps } from "@/lib/interfaces";
 
-const JobCard = ({ selectedJob, title, company, dates, description}) => {
+const JobCard = ({ selectedJob, title, company, dates, description}: JobCardProps) => {
 
   return (
     <>

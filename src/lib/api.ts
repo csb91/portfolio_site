@@ -1,6 +1,6 @@
-import { formData } from "@/lib/interfaces";
+import { formData, FetcherProps } from "@/lib/interfaces";
 
-export const fetcher = async ({ url, method, body, json = true }) => {
+export const fetcher = async ({ url, method, body, json = true }: FetcherProps) => {
   const res = await fetch(url, {
     method,
     ...(body && {body: JSON.stringify(body)}),

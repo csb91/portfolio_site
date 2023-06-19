@@ -1,5 +1,6 @@
 import { type NextRequest } from "next/server";
 import { getRecentlyPlayed } from "@/lib/spotify";
+import { Artist, Track } from "@/lib/interfaces";
 
 export const config = {
   runtime: 'edge'
@@ -9,8 +10,8 @@ export default async function handler(req: NextRequest) {
   const response = await getRecentlyPlayed();
   const { items } = await response.json();
 
-  const tracks = items.slice(0,5).map((track) => ({
-    artist: track.track.artists.map((_artist) => _artist.name).join(', '),
+  const tracks = items.slice(0,5).map((track: Track) => ({
+    artist: track.track.artists.map((_artist: Artist) => _artist.name).join(', '),
     songUrl: track.track.external_urls.spotify,
     title: track.track.name,
     album: track.track.album.name,

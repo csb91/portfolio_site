@@ -1,6 +1,7 @@
 import clsx from "clsx";
+import { InputProps } from "@/lib/interfaces";
 
-const Input = ({ className, ...props }) => {
+const Input = ({ className, ...props }: InputProps) => {
   return (
     <input
       className={clsx(

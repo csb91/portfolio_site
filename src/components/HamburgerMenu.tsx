@@ -1,4 +1,6 @@
-const HamburgerMenu = ({ isOpen, setIsOpen }) => {
+import { HamburgerMenuProps } from "@/lib/interfaces";
+
+const HamburgerMenu = ({ isOpen, setIsOpen }: HamburgerMenuProps) => {
   const genericHamburgerLine = `h-1 w-6 my-1 rounded-full bg-black transition ease transform duration-300`;
 
   return (

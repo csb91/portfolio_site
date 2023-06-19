@@ -5,6 +5,7 @@ import Link from "next/link";
 import clsx from "clsx";
 import { usePathname } from "next/navigation";
 import { NavbarLinksProps } from "@/lib/interfaces";
+import { MouseEvent } from "react";
 
 
 const NavbarLinks: FC<NavbarLinksProps> = ({ link, setIsOpen }) => {
@@ -15,7 +16,7 @@ const NavbarLinks: FC<NavbarLinksProps> = ({ link, setIsOpen }) => {
     isActive = true;
   }
 
-  const handleClick = (e) => {
+  const handleClick = (e: MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     setIsOpen(false);
   }

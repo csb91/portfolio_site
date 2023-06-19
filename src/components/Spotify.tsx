@@ -4,8 +4,9 @@ import Image from 'next/image';
 import Link from "next/link";
 import clsx from "clsx";
 import SpotifyLogo from '../../public/Spotify_Logo_RGB_Green.png';
+import { SpotifyProps } from "@/lib/interfaces";
 
-const Spotify = ({ className }) => {
+const Spotify = ({ className }: SpotifyProps) => {
   return (
     <div className={clsx('container flex flex-col mx-auto max-w-6xl', className)}>
       <div className='container flex mx-auto justify-start'>
@@ -18,7 +19,7 @@ const Spotify = ({ className }) => {
         <Image
           src={SpotifyLogo}
           width='150'
-          height='auto'
+          height={'auto'}
           alt='Spotify Logo'
         />
       </Link>

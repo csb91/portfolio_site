@@ -5,8 +5,9 @@ import BlueOcean from '../../public/blue_ocean.png'
 import MVP from '../../public/MVP_Project.png'
 import { GitHub } from "react-feather";
 import clsx from "clsx";
+import { ProjectContainerProps } from "@/lib/interfaces";
 
-const ProjectContainer = ({ title, description, tech, github, image, index }) => {
+const ProjectContainer = ({ title, description, tech, github, image, index }: ProjectContainerProps) => {
   return (
     <div className={clsx('container flex justify-between items-center mt-10 flex-col px-4 dark:text-white',
       index % 2 === 0 && 'md:flex-row',

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { linkInfo } from "@/lib/interfaces";
+import { linkInfo, HamburgerMenuProps } from "@/lib/interfaces";
 import NavbarLinks from "./NavbarLinks";
 import HamburgerMenu from "./HamburgerMenu";
 import { useState } from "react";
@@ -18,7 +18,7 @@ const links: linkInfo[] = [
 ]
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
   return (
     <div className={clsx('container purple-orange bg-clip-text text-transparent  mx-auto pl-4 flex items-center justify-between', isOpen && 'flex-col flex-grow')}>
@@ -26,7 +26,7 @@ const Navbar = () => {
         <div className='flex flex-row justify-between'>
           <Image
             src={MW}
-            height={'auto'}
+            height={20}
             width={20}
             className='mr-2'
             alt='Milky Way favicon'

@@ -7,7 +7,7 @@ import { VolumeX } from 'react-feather';
 
 
 const NowPlaying = () => {
-  const fetcher = (url) => fetch(url).then((res) => res.json());
+  const fetcher = (url: string) => fetch(url).then((res) => res.json());
   const { data } = useSWR('/api/spotify/now-playing', fetcher)
 
   return (
