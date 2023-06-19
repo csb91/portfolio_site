@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Swan from '../../public/Swan.gif'
 import BlueOcean from '../../public/blue_ocean.png'
-import MVP from '../../public/MVP_project.png'
+import MVP from '../../public/MVP_Project.png'
 import { GitHub } from "react-feather";
 import clsx from "clsx";
 
