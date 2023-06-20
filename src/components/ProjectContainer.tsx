@@ -31,7 +31,7 @@ const ProjectContainer = ({ title, description, tech, github, image, index }: Pr
           index % 2 === 0 && 'sm:pl-2',
           index % 2 === 1 && 'sm:pr-2')}
         >
-          <p className='text-sm'>
+          <p className='text-sm text-center sm:text-left'>
             {description}
           </p>
         </div>
