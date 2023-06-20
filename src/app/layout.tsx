@@ -1,8 +1,8 @@
 import '../styles/globals.css';
 import Footer from '../components/Footer';
 import Header from '@/components/Header';
-import Script from 'next/script';
 import type { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
   title: {
@@ -54,6 +54,7 @@ export default function RootLayout({
         <Header />
         <div className='container flex mx-auto min-h-screen justify-center mt-40'>{children}</div>
         <Footer />
+        <Analytics />
       </body>
     </html>
   )

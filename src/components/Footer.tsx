@@ -1,5 +1,3 @@
-import Link from "next/link";
-import { Twitter, GitHub, Linkedin } from "react-feather";
 import SocialLinks from "./SocialLinks";
 
 const Footer = () => {
