@@ -8,6 +8,7 @@ import HamburgerMenu from "./HamburgerMenu";
 import { useState } from "react";
 import MW from '../../public/milkyway-favicon.ico'
 import clsx from "clsx";
+import { MouseEvent } from "react";
 
 
 const links: linkInfo[] = [
@@ -20,6 +21,10 @@ const links: linkInfo[] = [
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
+  const handleClick = (e: MouseEvent<HTMLAnchorElement>) => {
+    setIsOpen(false);
+  }
+
   return (
     <div className={clsx('container purple-orange bg-clip-text text-transparent  mx-auto pl-4 flex items-center justify-between', isOpen && 'flex-col flex-grow')}>
       <div className='flex flex-row flex-grow justify-between w-full items-center'>
@@ -31,7 +36,10 @@ const Navbar = () => {
             className='mr-2'
             alt='Milky Way favicon'
           />
-          <Link href='/'>
+          <Link
+            href='/'
+            onClick={handleClick}
+          >
             <div className='text-sm font-bold hover:text-[#EE756A]'>
               Carter Brooks
             </div>
