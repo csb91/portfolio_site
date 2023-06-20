@@ -2,9 +2,7 @@
 
 import useSWR from 'swr';
 import Tracks from './Tracks';
-import clsx from 'clsx';
-import { Circle } from "react-feather";
-import { fetcher } from '@/lib/api';
+import { Track } from '@/lib/interfaces';
 
 const RecentlyPlayed = () => {
   const fetcher = (url: string) => fetch(url).then((res) => res.json());
@@ -20,8 +18,8 @@ const RecentlyPlayed = () => {
         Recently Played
       </div>
       <ol>
-        {data.tracks.map((track, index) => (
-          <Tracks track={track} ind={index + 1} key={index} />
+        {data.tracks.map((track: Track, index: number) => (
+          <Tracks track={track} index={index + 1} key={index} />
         ))}
       </ol>
     </div>

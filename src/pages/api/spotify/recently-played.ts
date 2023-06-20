@@ -10,12 +10,12 @@ export default async function handler(req: NextRequest) {
   const response = await getRecentlyPlayed();
   const { items } = await response.json();
 
-  const tracks = items.slice(0,5).map((track: Track) => ({
-    artist: track.track.artists.map((_artist: Artist) => _artist.name).join(', '),
-    songUrl: track.track.external_urls.spotify,
-    title: track.track.name,
-    album: track.track.album.name,
-    albumImageUrl: track.track.album.images[1].url
+  const tracks = items.slice(0,5).map((item: any) => ({
+    artist: item.track.artists.map((_artist: Artist) => _artist.name).join(', '),
+    songUrl: item.track.external_urls.spotify,
+    title: item.track.name,
+    album: item.track.album.name,
+    albumImageUrl: item.track.album.images[1].url
   }));
 
   return new Response(JSON.stringify({ tracks }), {

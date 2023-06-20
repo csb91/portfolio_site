@@ -9,16 +9,17 @@ const RECENTLY_PLAYED_ENDPOINT = `https://api.spotify.com/v1/me/player/recently-
 const TOKEN_ENDPOINT = `https://accounts.spotify.com/api/token`;
 
 const getAccessToken = async () => {
+  const bodyParams = new URLSearchParams();
+  bodyParams.append('grant_type', 'refresh_token');
+  bodyParams.append('refresh_token', refresh_token || '');
+
   const response = await fetch(TOKEN_ENDPOINT, {
     method: 'POST',
     headers: {
       Authorization: `Basic ${basic}`,
       'Content-Type': 'application/x-www-form-urlencoded'
     },
-    body: new URLSearchParams({
-      grant_type: 'refresh_token',
-      refresh_token
-    })
+    body: bodyParams
   });
 
   return response.json();

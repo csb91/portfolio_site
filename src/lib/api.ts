@@ -24,6 +24,7 @@ export const contact = (formInfo: formData) => {
   return fetcher({
     url: '/api/contact',
     method: 'POST',
-    body: formInfo
+    body: formInfo,
+    json: true
   })
 }

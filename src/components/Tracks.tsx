@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import { TracksProps } from "@/lib/interfaces";
 
-const Tracks = ({ track, ind }) => {
+const Tracks = ({ track, index }: TracksProps) => {
 
   return (
     <li className='container flex items-center h-20'>
@@ -13,7 +14,7 @@ const Tracks = ({ track, ind }) => {
       >
         <div className='container flex flex-row items-center'>
           <div className='font-bold m-1 pr-4'>
-            {ind}
+            {index}
           </div>
           <div className='flex-shrink-0'>
             <Image

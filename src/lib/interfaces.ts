@@ -1,5 +1,6 @@
 import HamburgerMenu from "@/components/HamburgerMenu";
 import Spotify from "@/components/Spotify";
+import { ImageProps } from "next/image";
 import { SetStateAction } from "react";
 import { StringLiteral } from "typescript";
 
@@ -55,6 +56,10 @@ export interface Track {
   external_urls: {spotify: string};
   name: string;
   album: {images: {url: string}[]};
+  songUrl: string;
+  title: string;
+  artist: string;
+  albumImageUrl: string;
 }
 
 export interface HamburgerMenuProps {
@@ -88,8 +93,8 @@ export interface ProjectContainerProps {
   tech: string;
   github: string;
   image: string;
-  index: string;
-  key: string;
+  index: number;
+  key: number;
 }
 
 export interface SocialLinksProps {
@@ -104,5 +109,16 @@ export interface SpotifyProps {
 export interface FetcherProps {
   url: string;
   method: string;
-  body: string;
+  body: formData;
+  json: boolean;
+}
+
+export interface TracksProps {
+  track: Track;
+  index: number;
+}
+
+export interface RecentlyPlayedProps {
+  track: string;
+  index: number;
 }

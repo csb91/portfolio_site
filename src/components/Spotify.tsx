@@ -19,7 +19,7 @@ const Spotify = ({ className }: SpotifyProps) => {
         <Image
           src={SpotifyLogo}
           width='150'
-          height={'auto'}
+          height='150'
           alt='Spotify Logo'
         />
       </Link>
