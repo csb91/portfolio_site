@@ -48,11 +48,11 @@ export default async function Home() {
           </p>
         </div>
         <div className='flex'>
-          <ChevronRight className='text-black dark:text-white'/>
+          <ChevronRight className='text-black dark:text-[#756AEE]'/>
           <Link href='/projects'>Checkout My Projects</Link>
         </div>
         <div className='flex flex-row'>
-          <ChevronRight className='text-black dark:text-white'/>
+          <ChevronRight className='text-black dark:text-[#756AEE]'/>
           <Link href='/contact'>Contact Me</Link>
         </div>
       </div>
