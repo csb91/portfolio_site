@@ -23,7 +23,7 @@ export const metadata = {
 
 export default async function Home() {
   return (
-    <div className='container flex flex-col-reverse justify-end mb-20 sm:mb-0 lg:flex-row flex-grow mx-auto lg:mt-20 purple-orange bg-clip-text text-transparent lg:justify-evenly max-w-6xl'>
+    <div className='container flex flex-col-reverse justify-end mb-20 sm:mb-0 lg:flex-row flex-grow mx-auto lg:mt-40 purple-orange bg-clip-text text-transparent lg:justify-evenly max-w-6xl'>
       <div className='flex flex-col px-2 mt-2'>
         <div className='flex justify-center sm:justify-start sm:text-left'>
           <h1 className='text-3xl pb-2 purple-orange bg-clip-text text-transparent'>
@@ -63,7 +63,7 @@ export default async function Home() {
         src={profilePic}
         alt='Carter Brooks Profile Picture'
         priority={true}
-        className='w-60 h-60'
+        className='w-60 h-60 sm:w-80 sm:h-80'
         />
       </div>
     </div>
