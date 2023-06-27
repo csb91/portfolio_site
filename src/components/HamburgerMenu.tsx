@@ -5,6 +5,7 @@ const HamburgerMenu = ({ isOpen, setIsOpen }: HamburgerMenuProps) => {
 
   return (
     <button
+      aria-label='Hamburger Navigation Menu for Mobile Browsing'
       className="flex flex-col h-12 w-12 border-2 border-black purple-orange rounded justify-center items-center group"
       onClick={() => setIsOpen(!isOpen)}
     >
