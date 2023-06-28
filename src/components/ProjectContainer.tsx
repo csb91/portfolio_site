@@ -23,19 +23,18 @@ const ProjectContainer = ({ title, description, tech, github, image, index }: Pr
           priority={title === 'Swan'}
         />
       </div>
-      <div className='container flex flex-col justify-center items-center max-w-xl'>
-        <h3 className='text-lg font-bold mb-6 mt-1 '>
+      <div className={clsx('container flex flex-col justify-center items-center max-w-xl',
+          index % 2 === 0 && 'md:pl-20',
+          index % 2 === 1 && 'md:pr-20')}>
+        <h3 className='text-xl font-bold underline text-[#EE756A] mb-4 mt-1'>
           {title}
         </h3>
-        <div className={clsx('container flex justify-center mb-2',
-          index % 2 === 0 && 'sm:pl-2',
-          index % 2 === 1 && 'sm:pr-2')}
-        >
-          <p className='text-sm text-center sm:text-left'>
+        <div className={clsx('container flex justify-center mb-2')}>
+          <p className='text-justify'>
             {description}
           </p>
         </div>
-        <div className='text-sm text-center font-bold mb-2'>
+        <div className='text-sm text-center text-[#EE756A] font-bold mb-2'>
           {tech}
         </div>
         <div>
