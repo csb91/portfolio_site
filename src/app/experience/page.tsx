@@ -10,7 +10,7 @@ export const metadata = {
     siteName: 'Carter Brooks',
     images: [
       {
-        url: 'https://carterbrooks.dev/opengraph-image',
+        url: 'https://carterbrooks.dev/og.png',
         width: 1920,
         height: 1280,
       },
