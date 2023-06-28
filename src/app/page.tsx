@@ -37,7 +37,7 @@ export default async function Home() {
         </div>
         <div className='flex justify-center text-center sm:justify-start sm:text-left'>
           <h3 className='text-6xl pb-2 purple-orange bg-clip-text text-transparent'>
-            I&apos;m a Full-Stack Engineer.
+            I&apos;m a Software Engineer.
           </h3>
         </div>
         <div className='flex justify-center text-center sm:justify-start sm:text-left'>

@@ -28,7 +28,7 @@ export default function About() {
         About Me
       </h1>
       <h2 className='text-2xl text-center mt-2 purple-orange bg-clip-text text-transparent'>
-        I&apos;m a Full-Stack Software Engineer Focused on Building Modern Web Applications.
+        I&apos;m a Software Engineer Focused on Building Modern Web Applications.
       </h2>
       <div className='container flex flex-col-reverse lg:flex-row justify-between items-center mx-auto max-w-6xl mt-6 dark:text-white'>
         <div className='w-5/6 md:w-3/4 lg:w-1/2 p-2'>
