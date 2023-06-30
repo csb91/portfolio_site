@@ -47,12 +47,12 @@ export default async function Home() {
             I enjoy tackling complex problems and turning them into elegant solutions.
           </p>
         </div >
-        <div className='flex flex-row justify-center text-center font-bold sm:justify-start sm:text-left'>
+        <div className='flex flex-row justify-center text-center font-bold sm:justify-start sm:text-left hover:text-[#EE756A]'>
           <ChevronRight className='text-black dark:text-[#756AEE]'/>
           <Link href='/projects'>Checkout My Projects</Link>
           <ChevronLeft className='text-black dark:text-[#756AEE]'/>
         </div>
-        <div className='flex flex-row justify-center text-center font-bold sm:justify-start sm:text-left'>
+        <div className='flex flex-row justify-center text-center font-bold sm:justify-start sm:text-left hover:text-[#EE756A]'>
           <ChevronRight className='text-black dark:text-[#756AEE]'/>
           <Link href='/contact'>Contact Me</Link>
           <ChevronLeft className='text-black dark:text-[#756AEE]'/>
