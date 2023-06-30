@@ -23,6 +23,8 @@ const jobList: jobInfo[] = [
     company: 'Steria LLC',
     dates: 'December 2021 - August 2022',
     description: [
+      `Developed standardized operating procedures and streamlined workflows to enhance operational efficiency
+      and ensure consistency across the organization of over 20 employees and contractors`,
       `Coordinated hundreds of projects with international teams,
       spanning from one day to multiple weeks, by effectively communicating and
       collaborating with remote team members to achieve goals and deliverables`,
@@ -40,8 +42,9 @@ const jobList: jobInfo[] = [
       allowed for maximum extraction of hydrocarbons`,
       `Analyzed potential acquisition targets by performing reserve and economic evaluations,
       resulting in the identification of profitable opportunities and increased revenue for the company`,
-      `Developed and implemented detailed workover plans and procedures for wells to optimize production`,
-      `Oversee regulatory matters with various state and federal government agencies`
+      `Developed and implemented detailed technical procedures for optimizing production in wells, ensuring efficient ops`,
+      `Managed and coordinated regulatory compliance with multiple state and federal government agencies,
+      ensuring adherence to all relevant laws, regulations, and guidelines`
     ]
   },
   {
