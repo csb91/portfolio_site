@@ -6,6 +6,7 @@ import MVP from '../../public/MVP_Project.png'
 import { GitHub } from "react-feather";
 import clsx from "clsx";
 import { ProjectContainerProps } from "@/lib/interfaces";
+import { Suspense } from 'react'
 
 const ProjectContainer = ({ title, description, tech, github, image, index }: ProjectContainerProps) => {
   return (
@@ -14,6 +15,7 @@ const ProjectContainer = ({ title, description, tech, github, image, index }: Pr
       index % 2 === 1 && 'md:flex-row-reverse')}
     >
       <div className='sm:hover:scale-125 sm:hover:transition-transform sm:ease-in-out duration-300 delay-150'>
+        <Suspense fallback={<p>Loading feed...</p>}>
         <Image
           src={image === 'Swan' ? Swan : image === 'BlueOcean' ? BlueOcean : image === 'MVP' ? MVP : ''}
           width={500}
@@ -22,6 +24,7 @@ const ProjectContainer = ({ title, description, tech, github, image, index }: Pr
           className='border-2 border-grey-500 shadow-xl rounded-md'
           priority={title === 'Swan'}
         />
+        </Suspense>
       </div>
       <div className={clsx('container flex flex-col justify-center items-center max-w-xl',
           index % 2 === 0 && 'md:pl-20',
