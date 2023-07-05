@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Experiences from "@/components/Experiences";
+import Certifications from "@/components/Certifications";
 
 export const metadata = {
   title: 'Experience',
@@ -39,6 +40,12 @@ export default function Experience() {
         </Link>
       </div>
       <Experiences />
+      <h2 className='text-2xl text-center mt-10 px-4 purple-orange bg-clip-text text-transparent'>
+       Certifications
+      </h2>
+      <div>
+        <Certifications />
+      </div>
     </div>
   )
 }

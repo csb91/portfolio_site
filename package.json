@@ -16,7 +16,7 @@
     "clsx": "^1.2.1",
     "eslint": "8.33.0",
     "immer": "^10.0.1",
-    "next": "^13.4.7",
+    "next": "^13.4.8",
     "nodemailer": "^6.9.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -29,7 +29,7 @@
   "devDependencies": {
     "@types/feather-icons": "^4.29.1",
     "autoprefixer": "^10.4.13",
-    "eslint-config-next": "^13.4.7",
+    "eslint-config-next": "^13.4.8",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.2.6"
   }
