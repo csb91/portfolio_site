@@ -22,6 +22,7 @@ const Skills = () => {
     <div className='container grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-24 mt-10 mb-20 px-4 max-w-6xl'>
       {skills.map((skill, ind) => (
         <Image
+        className='hover:animate-pulse'
         src={skill.url}
         width={100}
         height={100}
