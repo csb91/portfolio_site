@@ -4,7 +4,7 @@ import CCP_Badge from '../../public/aws-certified-cloud-practitioner.png'
 
 const Certifications = () => {
   return (
-    <div className='container mx-auto flex flex-row justify-center mt-6 mb-6 max-w-6xl'>
+    <div className='container mx-auto flex flex-row justify-center mt-6 mb-20 max-w-6xl'>
       <div>
         <Link
           href='https://www.credly.com/badges/8e3f1048-c027-44cf-bd55-1b12fa38fac0/public_url'
